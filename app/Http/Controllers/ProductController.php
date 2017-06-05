@@ -12,7 +12,7 @@ class ProductController extends Controller
 
      public function getProducts() 
      {
-    	$products = Product::all();
+    	$products = Product::with('filteri', 'jedinicaMere', 'kategorijaId', 'comments')->get();
     	$response = [
     		'products' => $products
     	];
@@ -21,7 +21,7 @@ class ProductController extends Controller
 
        public function getProduct($id) 
      {
-    	$products = Product::find($id);
+    	$products = Product::with('filteri', 'jedinicaMere', 'kategorijaId', 'comments')->find($id);
     	$response = [
     		'products' => $products
     	];

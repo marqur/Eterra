@@ -19,7 +19,7 @@
 |
 */
 
-require __DIR__.'/../Laravel/Eterra/bootstrap/autoload.php';
+require __DIR__.'/../bootstrap/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -33,7 +33,7 @@ require __DIR__.'/../Laravel/Eterra/bootstrap/autoload.php';
 |
 */
 
-$app = require_once __DIR__.'/../Laravel/Eterra/bootstrap/app.php';
+$app = require_once __DIR__.'/../bootstrap/app.php';
 
 /*
 |--------------------------------------------------------------------------

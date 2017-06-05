@@ -14,7 +14,7 @@ return [
         'add_default_role_on_register' => true,
         'default_role'                 => 'user',
         'namespace'                    => App\User::class,
-        'default_avatar'               => 'users/default.png',
+        'default_avatar'               => '/users/default.png',
     ],
 
     /*
@@ -86,69 +86,6 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Multilingual configuration
-    |--------------------------------------------------------------------------
-    |
-    | Here you can specify if you want Voyager to ship with support for
-    | multilingual and what locales are enabled.
-    |
-    */
-
-    'multilingual' => [
-        /*
-         * Set whether or not the multilingual is supported by the BREAD input.
-         */
-        'bread' => false,
-
-        /*
-         * Select default language
-         */
-        'default' => 'en',
-
-        /*
-         * Select languages that are supported.
-         */
-        'locales' => [
-            'en',
-            //'pt',
-        ],
-    ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Widgets Config
-    |--------------------------------------------------------------------------
-    |
-    | Here you can specify voyager administration settings
-    |
-    */
-
-    'widgets' => [
-        [
-            'name'  => 'User',
-            'icon'  => 'voyager-group',
-            'model' => TCG\Voyager\Models\User::class,
-            'url'   => 'admin/users',
-            'image' => '/images/widget-backgrounds/02.png',
-        ],
-        [
-            'name'  => 'Post',
-            'icon'  => 'voyager-news',
-            'model' => TCG\Voyager\Models\Post::class,
-            'url'   => 'admin/posts',
-            'image' => '/images/widget-backgrounds/03.png',
-        ],
-        [
-            'name'  => 'Page',
-            'icon'  => 'voyager-file-text',
-            'model' => TCG\Voyager\Models\Page::class,
-            'url'   => 'admin/pages',
-            'image' => '/images/widget-backgrounds/04.png',
-        ],
-    ],
-
-    /*
-    |--------------------------------------------------------------------------
     | Dashboard config
     |--------------------------------------------------------------------------
     |
@@ -174,37 +111,20 @@ return [
                 'icon_class' => 'voyager-power',
             ],
         ],
-
         'data_tables' => [
             'responsive' => true, // Use responsive extension for jQuery dataTables that are not server-side paginated
         ],
-
         'widgets' => [
             'TCG\\Voyager\\Widgets\\UserDimmer',
             'TCG\\Voyager\\Widgets\\PostDimmer',
             'TCG\\Voyager\\Widgets\\PageDimmer',
         ],
-
     ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | UI Generic Config
-    |--------------------------------------------------------------------------
-    |
-    | Here you change some of the Voyager UI settings.
-    |
-    | TODO: Move style properties to assets/css
-    |
-    */
 
     'login' => [
         'gradient_a' => '#ffffff',
         'gradient_b' => '#ffffff',
     ],
 
-    'primary_color' => '#22A7F0',
-
-    'show_dev_tips' => true, // Show development tip "How To Use:" in Menu and Settings
-
+    'primary_color' => '#8b9b17',
 ];
