@@ -26,7 +26,7 @@ box-shadow: 0px -2px 54px -7px rgba(0,0,0,0.75);">
 	<img style="display: block;margin-left: auto;margin-right: auto;
 		width: 150px;padding-top: 100px; margin-bottom: 40px;" src="http://eterra.brainzined.com/storage/eterra-logo%20(1).png">
 	<h2 style="text-align: center;">Nova Porudžbina</h2><br>
-	<p style="text-align: center; width: 80%; margin-left: 10%;">Zdravo {{ $user->value('name') }} - hvala Vam na porudžbini. Detalje možete videti u fakturi ispod.</p>
+	<p style="text-align: center; width: 80%; margin-left: 10%;">Zdravo {{ $name }} - hvala Vam na porudžbini. Detalje možete videti u fakturi ispod.</p>
 	<br><br>
 
 	<table style="width: 90%;
@@ -38,15 +38,15 @@ box-shadow: 0px -2px 54px -7px rgba(0,0,0,0.75);">
     vertical-align: top;">
 			<td style="padding-top: 20px;padding-bottom: 20px; border-bottom: 1px solid black; border-top:1px solid black;width: 33% !important;">
 				<h3>Adresa dostave:</h3>
-				<p>{{ $user->value('adresa') }},</p> 
-				<p>21000 {{ $user->value('grad') }}, Srbija</p>
-				<p>Telefon: {{ $user->value('telefon') }}</p>
+				<p>{{ $adresa }},</p> 
+				<p>21000 {{ $grad }}, Republika Srbija</p>
+				<p>Telefon: {{ $telefon }}</p>
 			</td>
 			<td style="padding-top: 20px;padding-bottom: 20px; border-bottom: 1px solid black; border-top:1px solid black;width: 33% !important;">
-				<p><h3>Napomena:</h3> Nema napomene.</p>
+				<p><h3>Napomena:</h3>{{ $napomena }}</p>
 			</td>
 			<td style="padding-top: 20px;padding-bottom: 20px; border-bottom: 1px solid black; border-top:1px solid black;width: 33% !important;">
-				<p><h3>Broj porudžbine:</h3> #{{ $broj }}</p>
+				<p><h3>Broj porudžbine: #{{ $broj }}</h3></p>
 			</td>
 		</tr>
 		</table>

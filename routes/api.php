@@ -42,6 +42,14 @@ Route::post('/comment', [
 	'uses' => 'CommentController@addComment'
 ]);
 
+Route::get('/news', [
+	'uses' => 'NewsController@getArticles'
+]);
+
+Route::get('/article/{id}', [
+	'uses' => 'NewsController@getArticle'
+]);
+
 
 /* END CONTENT ROUTES */
 

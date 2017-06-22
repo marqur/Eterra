@@ -39,6 +39,7 @@ class OrderShipped extends Mailable
                         'proizvod' => $this->user_id->product()->get(),
                         'user' => $this->user_id->userId(),
                         'broj' => $this->user_id->id
-                        ]);
+                        ])
+        ->subject("Uspešna porudžbina");
     }
 }

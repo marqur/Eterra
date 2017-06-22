@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('mail');
 });
 
 Route::get('/time', function () {
