@@ -26,7 +26,7 @@ box-shadow: 0px -2px 54px -7px rgba(0,0,0,0.75);">
 	<img style="display: block;margin-left: auto;margin-right: auto;
 		width: 150px;padding-top: 100px; margin-bottom: 40px;" src="http://eterra.brainzined.com/storage/eterra-logo%20(1).png">
 	<h2 style="text-align: center;">Nova Porudžbina</h2><br>
-	<p style="text-align: center; width: 80%; margin-left: 10%;">Zdravo {{ $name }} - hvala Vam na porudžbini. Detalje možete videti u fakturi ispod.</p>
+	<p style="text-align: center; width: 80%; margin-left: 10%;">Hvala Vam na porudžbini. Detalje možete videti u fakturi ispod.</p>
 	<br><br>
 
 	<table style="width: 90%;
@@ -41,6 +41,7 @@ box-shadow: 0px -2px 54px -7px rgba(0,0,0,0.75);">
 				<p>{{ $adresa }},</p> 
 				<p>21000 {{ $grad }}, Republika Srbija</p>
 				<p>Telefon: {{ $telefon }}</p>
+				<p>Ime i prezime: {{ $name }} {{$last_name}}</p>
 			</td>
 			<td style="padding-top: 20px;padding-bottom: 20px; border-bottom: 1px solid black; border-top:1px solid black;width: 33% !important;">
 				<p><h3>Napomena:</h3>{{ $napomena }}</p>

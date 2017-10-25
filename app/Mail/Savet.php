@@ -36,6 +36,7 @@ class Savet extends Mailable
                         'name' => $this->savet->name,
                         'email' => $this->savet->email,
                         'poruka' => $this->savet->poruka
-                        ]);
+                        ])
+        ->subject("Nova poruka");
     }
 }

@@ -38,6 +38,10 @@ Route::get('/herbs', [
 	'uses' => 'HerbController@getHerbs'
 ]);
 
+Route::get('/homepage', [
+	'uses' => 'HomepageController@getHomepage'
+]);
+
 Route::post('/comment', [
 	'uses' => 'CommentController@addComment'
 ]);
@@ -49,6 +53,21 @@ Route::get('/news', [
 Route::get('/article/{id}', [
 	'uses' => 'NewsController@getArticle'
 ]);
+
+Route::get('/partners', [
+	'uses' => 'PartnersController@getPartners'
+]);
+
+Route::get('/therapies', [
+	'uses' => 'TherapyController@getTherapies'
+]);
+
+Route::get('/therapy/{id}', [
+	'uses' => 'TherapyController@getTherapy'
+]);
+
+
+
 
 
 /* END CONTENT ROUTES */

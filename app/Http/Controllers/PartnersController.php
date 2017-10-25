@@ -3,19 +3,19 @@
 namespace App\Http\Controllers;
 
 use DB;
-use App\Herb;
+use App\Partner;
 use Illuminate\Http\Request;
 
 
 
-class HerbController extends Controller
+class PartnersController extends Controller
 {
 
-     public function getHerbs() 
+     public function getPartners() 
      {
-    	$herbs = Herb::all();
+    	$partners = Partner::all();
     	$response = [
-    		'herbarijum' => $herbs
+    		'partners' => $partners
     	];
     	return response()->json($response);
     }

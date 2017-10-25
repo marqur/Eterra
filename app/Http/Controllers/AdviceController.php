@@ -31,7 +31,7 @@ class AdviceController extends Controller{
 
         // Ship order...
 
-        Mail::to('majkicmarko29@yahoo.com')->send(new Savet($advice_send));
+        Mail::to('eterraulja@gmail.com')->send(new Savet($advice_send));
 
 
     	return response()->json([

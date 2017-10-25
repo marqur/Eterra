@@ -89,7 +89,7 @@ class OrderController extends Controller{
 
         // Ship order...
 
-         Mail::to($email)->send(new OrderShippedNoUser($order, $name, $last_name, $email, $telefon, $adresa, $grad, $napomena));
+         Mail::to([$email, 'eterraulja@gmail.com'])->send(new OrderShippedNoUser($order, $name, $last_name, $email, $telefon, $adresa, $grad, $napomena));
 
 
 

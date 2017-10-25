@@ -41,6 +41,7 @@ box-shadow: 0px -2px 54px -7px rgba(0,0,0,0.75);">
 				<p>{{ $user->value('adresa') }},</p> 
 				<p>21000 {{ $user->value('grad') }}, Srbija</p>
 				<p>Telefon: {{ $user->value('telefon') }}</p>
+				<p>Ime i prezime: {{ $user->value('name') }} {{ $user->value('last_name') }}</p>
 			</td>
 			<td style="padding-top: 20px;padding-bottom: 20px; border-bottom: 1px solid black; border-top:1px solid black;width: 33% !important;">
 				<p><h3>Napomena:</h3> Nema napomene.</p>
